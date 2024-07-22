@@ -23,6 +23,17 @@
                 <button>Logout</button>
             </form>
         </div>
+
+        <div style="border: 1px solid #000; padding: 1rem;">
+            <h3>Create Post</h3>
+            <form action="/create-post" method="POST">
+                @csrf
+                <input type="text" name="title" placeholder="Title">
+                <input type="text" name="content" placeholder="Content">
+                <button>Submit Post</button>
+            </form>
+        </div>
+
     @else
         <div style="border: 1px solid #000; padding: 1rem;">
             <h1>Registration</h1>
